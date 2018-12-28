@@ -9,7 +9,7 @@ echo "
                                         |___/|_|               
 By:m4xX.!
 "
-echo "version 1.1.0 by m4xX"
+echo "version 1.2.0 by m4xX"
 
 function list_dir_enc(){
 
@@ -65,10 +65,10 @@ choose="Encrypt Decrypt"
 
 select opt in $choose;
 do
-	if [[ $REPLY = 1 || $REPLY = "Encrypt" ]]; then
+	if [[ $REPLY = 1 || $REPLY = "Encrypt" || $REPLY = "encrypt" || $REPLY = "ENCRYPT" ]]; then
 		Encrypt_file
 		
-	elif [[ $REPLY = 2 || $REPLY = "Decrypt" ]]; then
+	elif [[ $REPLY = 2 || $REPLY = "Decrypt" || $REPLY = "decrypt" || $REPLY = "DECRYPT" ]]; then
 		
 		Decrypt_file
 
